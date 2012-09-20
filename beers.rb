@@ -35,6 +35,16 @@ class Time
   end
 end
 
+module Find
+  def self.beers
+    Enumerator.new do |y|
+      loop do
+        y << "beer"
+      end
+    end
+  end
+end
+
 puts "Loading BEER FRAMEWORK"
 sleep 2
 puts "... loaded!"
